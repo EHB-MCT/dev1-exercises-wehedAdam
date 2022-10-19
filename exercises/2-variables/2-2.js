@@ -24,4 +24,3 @@ context.beginPath();
 context.fillRect(x,y,size,size)
 context.fill
 }
-
