@@ -4,6 +4,8 @@ import * as Utils from "../../scripts/utils.js";
 
 draw();
 
+drawDiagonalGrid();
+
 function draw() {
     context.lineWidth = 2;
     context.strokeStyle = "white";
@@ -13,10 +15,10 @@ function draw() {
 }
 
 function drawDiagonalGrid() {
-    let i = ;
-    while (i <= ) {
-        Utils.drawLine(, , , );
-        Utils.drawLine(, , , );
-        i = ;
+    let i = 0 ;
+    while (i < 7) {
+        Utils.drawLine(50 + i*25 ,200 + i*25,200 + i*25,50 + i*25);
+        Utils.drawLine(50 + i*25 ,200 - i*25,200 + i*25 ,350 - i*25);
+        i++;
     }
 }
